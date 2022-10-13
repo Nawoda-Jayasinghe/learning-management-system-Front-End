@@ -25,7 +25,7 @@ import {
     return (
         <>
           <Appbar />
-          
+          Signup
           <Footer />
         </>
       );
