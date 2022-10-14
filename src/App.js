@@ -13,8 +13,7 @@ function App() {
     <div className="App">
       <Appbar/>
       
-      <Login/>
-      {/* <ClientApp/> */}
+      <Signup/>
       
       
       
