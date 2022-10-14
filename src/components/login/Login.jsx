@@ -32,7 +32,7 @@ export const Login = () => {
         </div>
         
           <p  className='link'>
-            <a href='#'>Forgot password</a> or <a href='#'>Sign Up</a>
+            <a href='#'>Forgot password</a> or <a href='../signup/Signup'>Sign Up</a>
           </p>
         
       </div>

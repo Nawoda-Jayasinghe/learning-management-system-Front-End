@@ -6,9 +6,17 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link, useNavigate } from "react-router-dom";
 
 
-function Appbar() {
+
+
+   
+  
+  
+  const Appbar = () => {
+  
+    
     return (
       <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -24,15 +32,23 @@ function Appbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Learning Management Sytem
+            Learning Management System
           </Typography>
           <Button color="inherit" href='/login'>Login</Button>
+
           <Button color="inherit" >Signup</Button>
         </Toolbar>
       </AppBar>
+
+      <Box>
+        
+      </Box>
     </Box>
       );
-}
+};
+
+
+
 
 export default Appbar;
 
