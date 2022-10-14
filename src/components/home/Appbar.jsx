@@ -36,7 +36,7 @@ import { Link, useNavigate } from "react-router-dom";
           </Typography>
           <Button color="inherit" href='/login'>Login</Button>
 
-          <Button color="inherit" >Signup</Button>
+          <Button color="inherit" href='/signup'>Signup</Button>
         </Toolbar>
       </AppBar>
 
