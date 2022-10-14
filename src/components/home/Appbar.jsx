@@ -34,7 +34,8 @@ import { Link, useNavigate } from "react-router-dom";
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Learning Management System
           </Typography>
-          <Button color="inherit" >Login</Button>
+          <Button color="inherit" href='/login'>Login</Button>
+
           <Button color="inherit" >Signup</Button>
         </Toolbar>
       </AppBar>

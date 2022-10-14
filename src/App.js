@@ -6,14 +6,23 @@ import ClientApp from './ClientApp';
 import { Login } from './components/login/Login';
 
 import Appbar from './components/home/Appbar';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
       <Appbar/>
-      
-      <Signup/>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/Login" element={<Login/>}/>
+        </Routes>
+      </BrowserRouter>
+
+      {/* <Login/> */}
+      {/* <ClientApp/> */}
+
       
       
       
