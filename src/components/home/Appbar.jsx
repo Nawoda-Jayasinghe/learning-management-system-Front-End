@@ -26,8 +26,8 @@ function Appbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Learning Management Sytem
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Signup</Button>
+          <Button color="inherit" href='/login'>Login</Button>
+          <Button color="inherit" >Signup</Button>
         </Toolbar>
       </AppBar>
     </Box>
