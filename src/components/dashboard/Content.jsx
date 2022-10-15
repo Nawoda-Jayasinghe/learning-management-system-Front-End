@@ -1,10 +1,19 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-;
+import { Routes, Route } from "react-router-dom";
+import EnrolledCourses from "../studentDashboard/EnrolledCourses";
+import AvailableCourses from "../studentDashboard/AvailableCourses";
 const Content = () => {
   return <div>
-  
-    This is the content section which redirect to lecturer or student
+  <div>
+        <Routes>
+          <Route
+            path="/availableCourses"
+            element={<AvailableCourses />}
+          ></Route>
+          <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
+        </Routes>
+      </div>
   </div>;
 };
 
