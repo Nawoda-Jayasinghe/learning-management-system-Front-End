@@ -12,13 +12,17 @@ import Sidebar from "./components/dashboard/Sidebar";
 import AvailableCourses from "./components/studentDashboard/AvailableCourses";
 import EnrolledCourses from "./components/studentDashboard/EnrolledCourses";
 
+import Hero from "./components/hero/Hero";
+
+
 function App() {
   return (
     <div className="App">
       <Appbar />
-
+      {/* <Hero/> */}
       <BrowserRouter>
         <Routes>
+        <Route path="/" element={<Hero />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Dashboard" element={<Dashboard />} />
