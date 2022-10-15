@@ -58,7 +58,7 @@ export const Login = () => {
               rules={[
                 {
                   required: true,
-                  message: "Please input your Name!",
+                  message: "Please input your User Name!",
                 },
               ]}
             >

@@ -2,6 +2,7 @@ import React from 'react';
 import SubjectCard from "../dashboard/SubjectCard";
 import Form from "antd/es/form/Form";
 import { Link } from "react-router-dom";
+import StudentList from './StudentList';
 
 
 function LecturerEnrollment() {
@@ -26,6 +27,7 @@ function LecturerEnrollment() {
         <SubjectCard name="Science" btnName="View"/>
         <SubjectCard name="Science" btnName="View"/>
         <SubjectCard name="Science" btnName="View"/>
+        
           
 
           
