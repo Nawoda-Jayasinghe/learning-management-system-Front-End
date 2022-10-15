@@ -18,10 +18,10 @@ function LecturerEnrollment() {
             flexWrap: 'wrap',
           }}
         >
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
+        <SubjectCard name="Science" btnName="View"/>
+        <SubjectCard name="Science" btnName="View"/>
+        <SubjectCard name="Science" btnName="View"/>
+        <SubjectCard name="Science" btnName="View"/>
           
 
           

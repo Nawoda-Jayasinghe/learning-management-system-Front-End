@@ -8,7 +8,7 @@ import StudentEnrollment from "../student/StudentEnrollment";
 
 const EnrolledCourses = () => {
 
-  const type = "student";
+  const type = "lecturer";
 
   return <div>
     <Sidebar/>

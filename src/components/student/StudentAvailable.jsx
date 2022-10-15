@@ -16,30 +16,25 @@ function StudentAvailable() {
             display: "flex",
             alignItems: "center",
             marginTop: "10px",
-            flexWrap: 'wrap',
+            flexWrap: "wrap",
           }}
         >
-        <SubjectCard name="Science"/>
-          <SubjectCard name="Geography"/>
-          <SubjectCard name="History"/>
-          <SubjectCard name="Computer Science"/>
-          <SubjectCard name="Sinhala"/>
-          <SubjectCard name="English"/>
-          <SubjectCard name="Science"/>
-          <SubjectCard name="Geography"/>
-          <SubjectCard name="History"/>
-          <SubjectCard name="Computer Science"/>
-          <SubjectCard name="Sinhala"/>
-          <SubjectCard name="English"/>
-
-          
-          
-          
+          <SubjectCard name="Science" btnName="Enroll" />
+          <SubjectCard name="Geography" btnName="Enroll" />
+          <SubjectCard name="History"  btnName="Enroll"/>
+          <SubjectCard name="Computer Science" btnName="Enroll"/>
+          <SubjectCard name="Sinhala" btnName="Enroll"/>
+          <SubjectCard name="English" btnName="Enroll"/>
+          <SubjectCard name="Science" btnName="Enroll"/>
+          <SubjectCard name="Geography"btnName="Enroll" />
+          <SubjectCard name="History" btnName="Enroll"/>
+          <SubjectCard name="Computer Science"btnName="Enroll" />
+          <SubjectCard name="Sinhala" btnName="Enroll"/>
+          <SubjectCard name="English" btnName="Enroll"/>
         </div>
       </Form>
     </div>
   );
 }
-
 
 export default StudentAvailable;
