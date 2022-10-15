@@ -1,20 +1,43 @@
 import { useNavigate } from "react-router-dom";
 
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Checkbox, Form, Input ,Select } from "antd";
+// import {Select} from 'antd';
 import React from "react";
 
+
 import "antd/dist/antd.css";
+
+const { Option } = Select;
 
 export const Signup = () => {
 
   const navigate = useNavigate();
+
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
     navigate("");
   };
 
-
+  const [form] = Form.useForm();
+  const onRoleChange = (value) => {
+    // switch (value) {
+    //   case 'male':
+    //     form.setFieldsValue({
+    //       note: 'Hi, man!',
+    //     });
+    //     return;
+    //   case 'female':
+    //     form.setFieldsValue({
+    //       note: 'Hi, lady!',
+    //     });
+    //     return;
+    //   case 'other':
+    //     form.setFieldsValue({
+    //       note: 'Hi there!',
+    //     });
+    // }
+  };
 
   return (
     <div className="sub-main">
@@ -25,6 +48,7 @@ export const Signup = () => {
           <h1>Sign up</h1>
           
           <div>
+
           <Form
             name="basic"
             labelCol={{
@@ -49,6 +73,8 @@ export const Signup = () => {
               ]}
             >
               <Input />
+
+              
             </Form.Item>
             <Form.Item
               label="Email"
@@ -61,7 +87,44 @@ export const Signup = () => {
               ]}
             >
               <Input />
+              </Form.Item>
+            
+
+            <Form.Item
+              label="UserName"
+              name="UserName"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your User Name!",
+                },
+              ]}
+            >
+              <Input />
             </Form.Item>
+
+      
+      <Form.Item
+        name="role"
+        label="Role"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+      >
+        <Select
+          placeholder="Select a option and change input text above"
+          onChange={onRoleChange}
+          allowClear
+        >
+          <Option value="lecturer">Lecturer</Option>
+          <Option value="student">Student</Option>
+          
+        </Select>
+      </Form.Item>
+
+
             <Form.Item
               label="Password"
               name="password"
