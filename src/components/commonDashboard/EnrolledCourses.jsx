@@ -15,7 +15,7 @@ const EnrolledCourses = () => {
     {
       type==="lecturer"? <LecturerEnrollment/> : <StudentEnrollment/>
     }
-    hi im enrolled courses
+    
 
   </div>;
 };
