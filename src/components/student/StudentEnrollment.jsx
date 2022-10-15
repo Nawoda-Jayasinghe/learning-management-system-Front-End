@@ -1,10 +1,13 @@
+import { Card } from 'antd';
 import React from 'react';
 
 
 function StudentEnrollment() {
   return (
     <div className="ClientApp">
-      student Enrollment
+        <Card>student Enrollment</Card>
+     
+
     </div>
   );
 }
