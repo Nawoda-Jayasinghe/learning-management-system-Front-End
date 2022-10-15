@@ -53,7 +53,7 @@ export const Login = () => {
             autoComplete="off"
           >
             <Form.Item
-              label="Name"
+              label="User Name"
               name="Name"
               rules={[
                 {
