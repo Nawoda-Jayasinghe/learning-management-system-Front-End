@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { AssignementForm } from "./AssignementForm";
 import AssignmentGrid from "./AssignmentGrid";
+import StudentList from "./StudentList";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -63,7 +64,7 @@ const EnrolledCourse = () => {
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Student List here
+      <StudentList/>
       </TabPanel>
       
     </Box>
