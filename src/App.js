@@ -14,6 +14,7 @@ import Sidebar from "./components/dashboard/Sidebar";
 import Hero from "./components/hero/Hero";
 import AvailableCourses from "./components/commonDashboard/AvailableCourses";
 import EnrolledCourses from "./components/commonDashboard/EnrolledCourses";
+import StudentAvailable from "./components/student/StudentAvailable";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Sidebar" element={<Sidebar/>}/>
           <Route path="/availableCourses" element={<AvailableCourses/>}/>
           <Route path="/enrolledCourses" element={<EnrolledCourses/>}/>
+          <Route path="/StudentAvailable" element={<StudentAvailable />} />
         </Routes>
       </BrowserRouter>
 
