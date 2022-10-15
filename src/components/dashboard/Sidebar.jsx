@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 import EnrolledCourses from "../studentDashboard/EnrolledCourses";
 import AvailableCourses from "../studentDashboard/AvailableCourses";
+import Content from "./Content";
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -24,24 +25,24 @@ function Sidebar() {
         ]}
       ></Menu>
       <div>
-        <Content />
+        <Content/>
       </div>
     </div>
   );
 
-  function Content() {
-    return (
-      <div>
-        <Routes>
-          <Route
-            path="/availableCourses"
-            element={<AvailableCourses />}
-          ></Route>
-          <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
-        </Routes>
-      </div>
-    );
-  }
+  // function Content() {
+  //   return (
+  //     <div>
+  //       <Routes>
+  //         <Route
+  //           path="/availableCourses"
+  //           element={<AvailableCourses />}
+  //         ></Route>
+  //         <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
+  //       </Routes>
+  //     </div>
+  //   );
+  // }
 }
 
 export default Sidebar;
