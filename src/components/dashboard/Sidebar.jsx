@@ -10,8 +10,10 @@ import Content from "./Content";
 function Sidebar() {
   const navigate = useNavigate();
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div style={{ }}>
+    {/* display: "flex", flexDirection: "row"  */}
       <Menu
+      
         onClick={({ key }) => {
           if (key === "signout") {
             //signout option have to implement
@@ -30,19 +32,7 @@ function Sidebar() {
     </div>
   );
 
-  // function Content() {
-  //   return (
-  //     <div>
-  //       <Routes>
-  //         <Route
-  //           path="/availableCourses"
-  //           element={<AvailableCourses />}
-  //         ></Route>
-  //         <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
-  //       </Routes>
-  //     </div>
-  //   );
-  // }
+ 
 }
 
 export default Sidebar;

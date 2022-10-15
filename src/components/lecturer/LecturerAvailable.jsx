@@ -16,6 +16,7 @@ function LecturerAvailable() {
             display: "flex",
             alignItems: "center",
             marginTop: "10px",
+            flexWrap: 'wrap',
           }}
         >
        

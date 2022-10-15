@@ -8,7 +8,7 @@ function StudentAvailable() {
   return (
     <div className="StudentAvailable">
       <h3>
-        <center>Courses Enrollment - Student</center>
+        <center>Available courses - Student</center>
       </h3>
       <Form onSubmit={() => {}} className="w-full">
         <div
@@ -16,13 +16,21 @@ function StudentAvailable() {
             display: "flex",
             alignItems: "center",
             marginTop: "10px",
+            flexWrap: 'wrap',
           }}
         >
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-          
+        <SubjectCard name="Science"/>
+          <SubjectCard name="Geography"/>
+          <SubjectCard name="History"/>
+          <SubjectCard name="Computer Science"/>
+          <SubjectCard name="Sinhala"/>
+          <SubjectCard name="English"/>
+          <SubjectCard name="Science"/>
+          <SubjectCard name="Geography"/>
+          <SubjectCard name="History"/>
+          <SubjectCard name="Computer Science"/>
+          <SubjectCard name="Sinhala"/>
+          <SubjectCard name="English"/>
 
           
           
