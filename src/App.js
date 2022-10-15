@@ -9,17 +9,18 @@ import Appbar from "./components/home/Appbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/dashboard/Dashboard";
 import Sidebar from "./components/dashboard/Sidebar";
-import AvailableCourses from "./components/studentDashboard/AvailableCourses";
-import EnrolledCourses from "./components/studentDashboard/EnrolledCourses";
+
 
 import Hero from "./components/hero/Hero";
+import AvailableCourses from "./components/commonDashboard/AvailableCourses";
+import EnrolledCourses from "./components/commonDashboard/EnrolledCourses";
+import StudentAvailable from "./components/student/StudentAvailable";
 
 
 function App() {
   return (
     <div className="App">
       <Appbar />
-      {/* <Hero/> */}
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<Hero />} />
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Sidebar" element={<Sidebar/>}/>
           <Route path="/availableCourses" element={<AvailableCourses/>}/>
           <Route path="/enrolledCourses" element={<EnrolledCourses/>}/>
+          <Route path="/StudentAvailable" element={<StudentAvailable />} />
         </Routes>
       </BrowserRouter>
 
