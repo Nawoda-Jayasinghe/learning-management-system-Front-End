@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../dashboard/Sidebar";
+import Lecturer from "../lecturer/Lecturer";
 import Student from "../student/Student";
 
 
@@ -11,7 +12,7 @@ const AvailableCourses = () => {
 
     <Sidebar/>
     {
-      type==="lecturer"? "lecturer Content " : <Student/>
+      type==="lecturer"? <Lecturer/> : <Student/>
     }
     hi im available courses
   </div>;
