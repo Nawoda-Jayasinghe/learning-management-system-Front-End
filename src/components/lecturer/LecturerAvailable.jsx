@@ -20,10 +20,10 @@ function LecturerAvailable() {
           }}
         >
        
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
+        <SubjectCard name="Science" btnName="Enroll"/>
+        <SubjectCard name="Science" btnName="Enroll"/>
+        <SubjectCard name="Science" btnName="Enroll"/>
+        <SubjectCard name="Science" btnName="Enroll"/>
         
           
 

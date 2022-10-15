@@ -10,7 +10,7 @@ const SubjectCard = (props) => (
               <center>
                 <label>{props.name}</label>
                 <Button type="primary" block className="w-full">
-                  Enroll
+                  {props.btnName}
                 </Button>
               </center>
             </Grid>
