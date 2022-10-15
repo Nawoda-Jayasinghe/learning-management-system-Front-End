@@ -21,14 +21,14 @@ function StudentEnrollment() {
           }}
         >
           <Link to="/StudentCourseMarks">
-            <SubjectCard />
+            <SubjectCard name="Mathematics"/>
           </Link>
-          <SubjectCard />
-          <SubjectCard />
-          <SubjectCard />
-          <SubjectCard />
-          <SubjectCard />
-          <SubjectCard />
+          <SubjectCard name="Science"/>
+          <SubjectCard name="Geography"/>
+          <SubjectCard name="History"/>
+          <SubjectCard name="Computer Science"/>
+          <SubjectCard name="Sinhala"/>
+          
         </div>
       </Form>
     </div>
