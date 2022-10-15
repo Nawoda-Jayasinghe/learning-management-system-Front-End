@@ -1,7 +1,11 @@
-import React from "react";
+// import React from "react";
+// import Sidebar from "../dashboard/Sidebar";
+// import SubjectCard from "../dashboard/SubjectCard";
+// const Course = () => {
+//   return <div>
+//     <Sidebar/>
+    
+//   </div>;
+// };
 
-const Course = () => {
-  return <div>Course</div>;
-};
-
-export default Course;
+// export default Course;
