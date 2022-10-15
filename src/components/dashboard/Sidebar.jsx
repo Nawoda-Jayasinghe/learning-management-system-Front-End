@@ -3,8 +3,8 @@ import "antd/dist/antd.css";
 import { Menu } from "antd";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
-import EnrolledCourses from "../studentDashboard/EnrolledCourses";
-import AvailableCourses from "../studentDashboard/AvailableCourses";
+import EnrolledCourses from "../commonDashboard/EnrolledCourses";
+import AvailableCourses from "../commonDashboard/AvailableCourses";
 import Content from "./Content";
 
 function Sidebar() {
