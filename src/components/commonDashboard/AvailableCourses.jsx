@@ -6,7 +6,7 @@ import Student from "../student/Student";
 import StudentAvailable from "../student/StudentAvailable";
 
 const AvailableCourses = () => {
-  const type = "lecturer";
+  const type = "student";
 
   return (
     <div>
