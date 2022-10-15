@@ -16,6 +16,7 @@ import AvailableCourses from "./components/commonDashboard/AvailableCourses";
 import EnrolledCourses from "./components/commonDashboard/EnrolledCourses";
 import StudentAvailable from "./components/student/StudentAvailable";
 import StudentCourseMarks from "./components/student/StudentCourseMarks";
+import EnrolledCourse from "./components/lecturer/EnrolledCourse";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/enrolledCourses" element={<EnrolledCourses/>}/>
           <Route path="/StudentAvailable" element={<StudentAvailable />} />
           <Route path="/StudentCourseMarks" element={<StudentCourseMarks/>} />
+          <Route path="/EnrolledCourse" element={<EnrolledCourse/>} />
         </Routes>
       </BrowserRouter>
 

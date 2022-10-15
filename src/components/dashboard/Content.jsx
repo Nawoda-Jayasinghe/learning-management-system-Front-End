@@ -5,7 +5,6 @@ import EnrolledCourses from "../commonDashboard/EnrolledCourses";
 import AvailableCourses from "../commonDashboard/AvailableCourses";
 const Content = () => {
   return (
-    <div>
       <div>
         <Routes>
           <Route
@@ -15,7 +14,6 @@ const Content = () => {
           <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
         </Routes>
       </div>
-    </div>
   );
 };
 

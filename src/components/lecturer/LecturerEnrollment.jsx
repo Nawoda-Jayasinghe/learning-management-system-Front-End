@@ -1,6 +1,7 @@
 import React from 'react';
 import SubjectCard from "../dashboard/SubjectCard";
 import Form from "antd/es/form/Form";
+import { Link } from "react-router-dom";
 
 
 function LecturerEnrollment() {
@@ -18,6 +19,9 @@ function LecturerEnrollment() {
             flexWrap: 'wrap',
           }}
         >
+        <Link to="/EnrolledCourse">
+            <SubjectCard name="Mathematics" btnName="View"/>
+          </Link>
         <SubjectCard name="Science" btnName="View"/>
         <SubjectCard name="Science" btnName="View"/>
         <SubjectCard name="Science" btnName="View"/>
