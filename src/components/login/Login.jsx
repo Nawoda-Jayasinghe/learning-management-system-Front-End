@@ -12,7 +12,7 @@ export const Login = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    navigate("/course");
+    navigate("/dashboard");
   };
 
   return (
