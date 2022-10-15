@@ -19,14 +19,18 @@ function StudentAvailable() {
             flexWrap: 'wrap',
           }}
         >
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
-        <SubjectCard/>
+        <SubjectCard name="Science"/>
+          <SubjectCard name="Geography"/>
+          <SubjectCard name="History"/>
+          <SubjectCard name="Computer Science"/>
+          <SubjectCard name="Sinhala"/>
+          <SubjectCard name="English"/>
+          <SubjectCard name="Science"/>
+          <SubjectCard name="Geography"/>
+          <SubjectCard name="History"/>
+          <SubjectCard name="Computer Science"/>
+          <SubjectCard name="Sinhala"/>
+          <SubjectCard name="English"/>
 
           
           
