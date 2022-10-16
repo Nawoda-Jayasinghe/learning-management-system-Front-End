@@ -7,7 +7,9 @@ const Content = () => {
   return (
     <div>
       <Routes>
+
         <Route path="/availableCourses" element={<AvailableCourses />}></Route>
+
         <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
       </Routes>
     </div>
