@@ -1,5 +1,5 @@
 import "antd/dist/antd.css";
-
+import * as React from 'react';
 import { Menu } from "antd";
 import { Routes, Route, useNavigate } from "react-router-dom";
 

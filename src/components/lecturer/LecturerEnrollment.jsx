@@ -1,6 +1,7 @@
 import React from 'react';
 import SubjectCard from "../dashboard/SubjectCard";
 import Form from "antd/es/form/Form";
+import AssignmentMarksForm from './AssignmentMarksForm';
 
 
 function LecturerEnrollment() {
@@ -20,12 +21,8 @@ function LecturerEnrollment() {
         <SubjectCard/>
         <SubjectCard/>
         <SubjectCard/>
-        <SubjectCard/>
-          
-
-          
-          
-          
+        <SubjectCard/>          
+        
         </div>
       </Form>
     </div>
