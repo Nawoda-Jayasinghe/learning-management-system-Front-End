@@ -168,7 +168,7 @@ export const Signup = () => {
         </div>
 
         <p className="link">
-          <a href="#">Forgot password</a> or <a href="#">Sign Up</a>
+          <a href="#">Forgot password</a> or <a href="/login">Login</a>
         </p>
       </div>
     </div>

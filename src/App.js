@@ -41,8 +41,6 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-      {/* <Login/> */}
-      {/* <ClientApp/> */}
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function StudentEnrollment() {
   return (
-    <div className="StudentAvailable">
+    <div className="StudentAvailable" >
       <h3>
         <center>Enrolled courses - Student</center>
       </h3>
