@@ -6,9 +6,9 @@ import Student from "../student/Student";
 import StudentEnrollment from "../student/StudentEnrollment";
 
 
-const EnrolledCourses = () => {
+const EnrolledCourses = (prop) => {
 
-  const type = "lecturer";
+  const type = prop.type;
 
   return <div>
     <Sidebar/>

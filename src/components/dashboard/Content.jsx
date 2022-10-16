@@ -3,18 +3,15 @@ import Sidebar from "./Sidebar";
 import { Routes, Route } from "react-router-dom";
 import EnrolledCourses from "../commonDashboard/EnrolledCourses";
 import AvailableCourses from "../commonDashboard/AvailableCourses";
-const Content = () => {
+const Content = (prop) => {
   return (
     <div>
-      <div>
-        <Routes>
-          <Route
-            path="/availableCourses"
-            element={<AvailableCourses />}
-          ></Route>
-          <Route path="/enrolledCourses" element={<EnrolledCourses />}></Route>
-        </Routes>
-      </div>
+      <Routes>
+
+        <Route path="/availableCourses" element={<AvailableCourses type={prop.type} />}></Route>
+
+        <Route path="/enrolledCourses" element={<EnrolledCourses type={prop.type} />}></Route>
+      </Routes>
     </div>
   );
 };
