@@ -3,16 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { Button, Checkbox, Form, Input } from "antd";
 import React from "react";
 
+
 import "antd/dist/antd.css";
 
 export const ForgotPassword = () => {
 
   const navigate = useNavigate();
 
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    navigate("/dashboard");
-  };
+  // const hhandleOnPopup = (e) => {
+  //   e.preventDefault();
+  //   navigate("/SuccessPopup");
+  // };
 
   return (
     <div className="sub-main">
@@ -64,7 +65,7 @@ export const ForgotPassword = () => {
               <Button
                 type="primary"
                 htmlType="submit"
-                // onClick={(e) => handleOnSubmit(e)}
+                // onClick={(e) => handleOnPopup(e)}
               >
                 Reset Password
               </Button>
