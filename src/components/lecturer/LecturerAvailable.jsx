@@ -1,5 +1,6 @@
 import React from 'react';
 import SubjectCard from "../dashboard/SubjectCard";
+import { ForgotPassword } from '../login/ForgotPassword';
 import Form from "antd/es/form/Form";
 import AssignmentGrid from './AssignmentGrid';
 
@@ -20,16 +21,11 @@ function LecturerAvailable() {
           }}
         >
        
+        {/* <SubjectCard name="Science" btnName="Enroll"/>
         <SubjectCard name="Science" btnName="Enroll"/>
         <SubjectCard name="Science" btnName="Enroll"/>
-        <SubjectCard name="Science" btnName="Enroll"/>
-        <SubjectCard name="Science" btnName="Enroll"/>
-        
-          
+        <SubjectCard name="Science" btnName="Enroll"/> */}
 
-          
-          
-          
         </div>
       </Form>
     </div>

@@ -9,6 +9,7 @@ import Appbar from "./components/home/Appbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/dashboard/Dashboard";
 import Sidebar from "./components/dashboard/Sidebar";
+import { ForgotPassword } from "./components/login/ForgotPassword";
 
 
 import Hero from "./components/hero/Hero";
@@ -35,6 +36,8 @@ function App() {
           <Route path="/StudentAvailable" element={<StudentAvailable />} />
           <Route path="/StudentCourseMarks" element={<StudentCourseMarks/>} />
           <Route path="/EnrolledCourse" element={<EnrolledCourse/>} />
+          <Route path="/ForgotPassword" element={<ForgotPassword/>} />
+        
         </Routes>
       </BrowserRouter>
 
