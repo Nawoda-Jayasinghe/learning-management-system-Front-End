@@ -18,7 +18,9 @@ import EnrolledCourses from "./components/commonDashboard/EnrolledCourses";
 import StudentAvailable from "./components/student/StudentAvailable";
 import StudentCourseMarks from "./components/student/StudentCourseMarks";
 import EnrolledCourse from "./components/lecturer/EnrolledCourse";
+import Content from "./components/dashboard/Content";
 
+const userType ="lecturer";
 
 function App() {
   return (
@@ -29,15 +31,15 @@ function App() {
         <Route path="/" element={<Hero />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Dashboard" element={<Dashboard type={userType} />} />
           <Route path="/Sidebar" element={<Sidebar/>}/>
-          <Route path="/availableCourses" element={<AvailableCourses/>}/>
-          <Route path="/enrolledCourses" element={<EnrolledCourses/>}/>
+          <Route path="/availableCourses" element={<AvailableCourses type={userType}/>}/>
+          <Route path="/enrolledCourses" element={<EnrolledCourses type={userType}/>}/>
           <Route path="/StudentAvailable" element={<StudentAvailable />} />
           <Route path="/StudentCourseMarks" element={<StudentCourseMarks/>} />
           <Route path="/EnrolledCourse" element={<EnrolledCourse/>} />
           <Route path="/ForgotPassword" element={<ForgotPassword/>} />
-        
+          <Route path="/Content" element={<Content type={userType}/>} />
         </Routes>
       </BrowserRouter>
 

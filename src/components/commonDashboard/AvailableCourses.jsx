@@ -5,8 +5,8 @@ import LecturerAvailable from "../lecturer/LecturerAvailable";
 import Student from "../student/Student";
 import StudentAvailable from "../student/StudentAvailable";
 
-const AvailableCourses = () => {
-  const type = "w";
+const AvailableCourses = (prop) => {
+  const type = prop.type;
 
   return (
     <div>

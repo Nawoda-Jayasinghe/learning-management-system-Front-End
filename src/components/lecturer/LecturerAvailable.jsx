@@ -21,10 +21,10 @@ function LecturerAvailable() {
           }}
         >
        
-        {/* <SubjectCard name="Science" btnName="Enroll"/>
         <SubjectCard name="Science" btnName="Enroll"/>
         <SubjectCard name="Science" btnName="Enroll"/>
-        <SubjectCard name="Science" btnName="Enroll"/> */}
+        <SubjectCard name="Science" btnName="Enroll"/>
+        <SubjectCard name="Science" btnName="Enroll"/>
 
         </div>
       </Form>
