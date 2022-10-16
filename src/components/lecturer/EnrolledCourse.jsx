@@ -1,13 +1,14 @@
 import React from "react";
 import Sidebar from "../dashboard/Sidebar";
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import { AssignementForm } from "./AssignementForm";
 import AssignmentGrid from "./AssignmentGrid";
 import StudentList from "./StudentList";
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -41,15 +42,18 @@ function a11yProps(index) {
   };
 }
 const EnrolledCourse = () => {
-
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  return <div>
-  <Sidebar/>
+  return (
+    <div style={{ display: "flex", width:"100%" }}>
+      <div>
+        <Sidebar/>
+      </div>
+      <div>
   <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -69,6 +73,8 @@ const EnrolledCourse = () => {
       
     </Box>
   </div>;
+    </div>
+  );
 };
 
 export default EnrolledCourse;

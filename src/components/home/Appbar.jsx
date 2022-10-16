@@ -8,9 +8,8 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useNavigate } from "react-router-dom";
 import '../../index.css';
-import hero from "../../image/hero.png";
 
-import { Image, Space } from "antd";
+
 
 const Appbar = () => {
   return (

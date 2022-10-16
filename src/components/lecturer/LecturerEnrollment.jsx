@@ -7,7 +7,7 @@ import StudentList from './StudentList';
 
 function LecturerEnrollment() {
   return (
-    <div className="StudentAvailable">
+    <div className="StudentAvailable" >
       <h3>
         <center>Enrolled courses - Lecturer</center>
       </h3>

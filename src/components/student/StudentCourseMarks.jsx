@@ -7,6 +7,9 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Card } from "@mui/material";
+import Sidebar from "../dashboard/Sidebar";
+import { width } from "@mui/system";
+
 
 function createData(name, description, marks) {
   return { name, description, marks };
@@ -20,9 +23,15 @@ const rows = [
   createData("Assignment 5", "Mathematics tutorial lesson 5", "45%"),
 ];
 
-export default function StudentCourseMarks() {
+const StudentCourseMarks = ()=> {
   return (
-    <Card style={{ padding: "10px", width: "100%" }}>
+    <div  style={{ display: "flex"  }  }>
+      <div>
+      <Sidebar />
+      </div>
+      <div>
+      <h1>Mathematics Assignments</h1>
+      <Card style={{ padding: "10px", width: "100%" }}>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
@@ -49,5 +58,10 @@ export default function StudentCourseMarks() {
         </Table>
       </TableContainer>
     </Card>
+      </div>
+    </div>
+    
   );
-}
+};
+
+export default StudentCourseMarks;
